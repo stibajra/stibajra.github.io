@@ -39,6 +39,16 @@
                             margin: 0 0 20px 0;
                             padding: 0;
                         }
+                        input::-webkit-outer-spin-button,
+                        input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+
+                        /* Firefox */
+                        input[type=number] {
+                            -moz-appearance: textfield;
+                        }
                         /* Back to top button */
                         
                         .back-to-top {
@@ -204,9 +214,6 @@
                             position: relative;
                             background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
                             background-size: cover;
-                        }
-                        #intro .intro-fotografi{
-                            background:  #f5f8fd url("../img/fotografi/fotografi-intro-bg.jpg") center top no-repeat
                         }
                         
                         #intro .intro-info h2 {
@@ -477,7 +484,7 @@
                         .section-header p {
                             text-align: center;
                             margin: auto;
-                            font-size: 15px;
+                            font-size: 20px;
                             padding-bottom: 60px;
                             color: #535074;
                             width: 50%;
@@ -626,58 +633,148 @@
                             line-height: 28px;
                             margin-bottom: 0;
                             text-align: left;
-                        }
-                        /* Why Us Section
+                        }/* Portfolio Section
 --------------------------------*/
-                        
-                        #why-us {
-                            padding: 60px 0;
-                        }
-                        
-                        #why-us .why-us-content .features {
-                            margin: 0 0 15px 0;
-                            padding: 0;
-                            transition: 0.3s ease-in-out;
-                        }
-                        
-                        #why-us .why-us-content .features i {
-                            font-size: 36px;
-                            float: left;
-                        }
-                        
-                        #why-us .why-us-content .features h4 {
-                            font-size: 24px;
-                            font-weight: 600;
-                            margin-left: 56px;
-                            color: #413e66;
-                            margin-bottom: 5px;
-                        }
-                        
-                        #why-us .why-us-content .features p {
-                            font-size: 16px;
-                            margin-left: 56px;
-                            color: #555186;
-                        }
-                        
-                        #why-us .counters {
-                            padding-top: 40px;
-                        }
-                        
-                        #why-us .counters span {
-                            font-family: "Montserrat", sans-serif;
-                            font-weight: bold;
-                            font-size: 48px;
-                            display: block;
-                            color: #555186;
-                        }
-                        
-                        #why-us .counters p {
-                            padding: 0;
-                            margin: 0 0 20px 0;
-                            font-family: "Montserrat", sans-serif;
-                            font-size: 14px;
-                            color: #8a87b6;
-                        }
+
+#portfolio {
+    padding: 60px 0;
+  }
+  
+  #portfolio #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 35px 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  #portfolio #portfolio-flters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #413e66;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #portfolio #portfolio-flters li:hover,
+  #portfolio #portfolio-flters li.filter-active {
+    color: #1bb1dc;
+  }
+  
+  #portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  #portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap {
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 {
+    font-size: 22px;
+    line-height: 1px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    padding-bottom: 0;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
+    color: #fff;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a:hover {
+    color: #1bb1dc;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info p {
+    padding: 0;
+    margin: 0;
+    color: #f8fcff;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details {
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    background: #1bb1dc;
+    border-radius: 50%;
+    margin: 10px 4px 0 4px;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview i,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details i {
+    padding-top: 6px;
+    font-size: 22px;
+    color: #fff;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover {
+    background: #42c3e8;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
+  #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
+    color: #fff;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap:hover {
+    background: #282646;
+  }
+  
+  #portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+  
                         /* Call To Action Section
 --------------------------------*/
                         
@@ -774,6 +871,9 @@
                         
                         #features {
                             padding: 80px 0;
+                        }
+                        #features h2{
+                            margin-bottom: 50px;
                         }
                         
                         #features h4 {
@@ -1085,6 +1185,12 @@
                         .form button[type="submit"]:hover {
                             background: #0a98c0;
                             cursor: pointer;
+                        }
+                        .bold{
+                            font-weight: bold;
+                        }
+                        .italic{
+                            font-style: italic;
                         }
                             /*--------------------------------------------------------------
 # Responsive Media Queries

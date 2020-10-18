@@ -95,15 +95,16 @@
 
           <div class="col-lg-6 col-md-6">
             <div class="about-img">
-              <img src="img/about-img.jpg" alt="">
+              <img src="img/fotografi/about-img.jpg" href="" alt="">
+              <a href="https://unsplash.com/@jakobowens1" style="color: grey">Photo by Jakob Owens</a>
             </div>
           </div>
 
           <div class="col-lg-6 col-md-6">
             <div class="about-content">
               <h2>Apa itu Lomba Fotografi?</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p>Aut dolor id. Sint aliquam consequatur ex ex labore. Et quis qui dolor nulla dolores neque. Aspernatur consectetur omnis numquam quaerat. Sed fugiat nisi. Officiis veniam molestiae. Et vel ut quidem alias veritatis repudiandae ut fugit. Est ut eligendi aspernatur nulla voluptates veniam iusto vel quisquam. Fugit ut maxime incidunt accusantium totam repellendus eum error. Et repudiandae eum iste qui et ut ab alias.</p>
+              <p>Lomba fotografi merupakan proses atau metode untuk menghasilkan gambar atau foto dari suatu objek dengan merekam pantulan cahaya yang mengenai objek tersebut pada media yang peka cahaya.</p> 
+              <p>Alat paling populer untuk menangkap cahaya ini adalah kamera. Dengan adanya kegiatan lomba fotografi peserta bisa belajar mengenai teknik dasar fotografi, menunjukkan kepandaian mereka di bidang ini, mendapatkan pengalaman serta menguatkan mental bersaing yang berguna untuk kedepannya.</p>
             </div>
           </div>
         </div>
@@ -116,8 +117,8 @@
     ============================-->
     <section id="features">
       <div class="container">
-
         <div class="row feature-item">
+          <h2 class="bold text-center col-lg-12 wow fadeInUp">Petunjuk Teknis Lomba Fotografi</h2>
           <div class="col-lg-6 wow fadeInUp">
             <img src="img/features-1.svg" class="img-fluid" alt="">
           </div>
@@ -169,13 +170,8 @@
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
-                        <label for="date">Tanggal lahir</label><br>
-                        <input type="date" class="form-control" name="date" id="date" data-rule="date" data-msg="Masukan tanggal lahir yang benar" />
-                        <div class="validation"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label><br>
-                        <input type="email" class="form-control" name="email" id="email" placeholder="supri@gemail.com" data-rule="email" data-msg="Masukan email yang benar" />
+                        <label for="no-hp">No HP</label><br>
+                        <input type="number" class="form-control" name="no-hp" id="no-hp" placeholder="+62/0" maxlength="20" data-rule="number" data-msg="Masukan email yang benar" />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
@@ -190,7 +186,7 @@
                   <div class="text-right"><button id="submit1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Submit</button></div>
                   
                   <!-- Modal -->
-                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="z-index: 9999">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                        <div class="modal-header">
@@ -202,8 +198,7 @@
                         <div class="modal-body">
                           <div>Lomba : <br><b><div id="konfirm-lomba"></div></b></div><br>
                           <div>Nama lengkap : <br><b><div id="konfirm-nama"></div></b></div><br>
-                          <div>Tanggal lahir : <br><b><div id="konfirm-tanggal"></div></b></div><br>
-                          <div>Email : <br><b><div id="konfirm-email"></div></b></div><br>
+                          <div>No HP : <br><b><div id="konfirm-no-hp"></div></b></div><br>
                           <div>Sekolah : <br><b><div id="konfirm-sekolah"></div></b></div><br>
                           <div>Foto Kartu Pelajar : <br><img src="" alt="" id="konfirm-file"/></div>
                         </div>

@@ -144,16 +144,14 @@
   $("#submit1").click(function(){
     var lomba = document.getElementById("lomba").value;
     var name = document.getElementById("name").value;
-    var date = document.getElementById("date").value;
-    var email = document.getElementById("email").value;
+    var noHp = document.getElementById("no-hp").value;
     var sekolah = document.getElementById("sekolah").value;
     var kartuPelajar = document.getElementById("kartu-pelajar").value;
     var imgPreview = document.getElementById("konfirm-file");
     
     document.getElementById("konfirm-lomba").innerHTML = lomba;
     document.getElementById("konfirm-nama").innerHTML = name;
-    document.getElementById("konfirm-tanggal").innerHTML = date;
-    document.getElementById("konfirm-email").innerHTML = email;
+    document.getElementById("konfirm-no-hp").innerHTML = noHp;
     document.getElementById("konfirm-sekolah").innerHTML = sekolah;
     imgPreview.src = kartuPelajar;
     
