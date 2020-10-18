@@ -205,6 +205,9 @@
                             background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
                             background-size: cover;
                         }
+                        #intro .intro-fotografi{
+                            background:  #f5f8fd url("../img/fotografi/fotografi-intro-bg.jpg") center top no-repeat
+                        }
                         
                         #intro .intro-info h2 {
                             color: #413e66;
@@ -244,12 +247,6 @@
                         #intro .intro-info .btn-services:hover {
                             background: #0a98c0;
                         }
-
-                        /*Fotografi */
-                        #intro .fotografi-intro{
-                            width: 300%;
-                        }
-
 
                         /*--------------------------------------------------------------
 # Navigation Menu
@@ -692,12 +689,16 @@
                         
                         #call-to-action .cta-title {
                             color: #fff;
-                            font-size: 28px;
+                            font-size: 30px;
                             font-weight: 700;
                         }
                         
                         #call-to-action .cta-text {
                             color: #fff;
+                            font-size: 20px;
+                        }
+                        #call-to-action .cta-text span{
+                            color: #fdf502;
                         }
                         
                         #call-to-action .cta-btn {
@@ -1045,6 +1046,9 @@
                             font-size: 20px;
                             margin-right: 10px
                         }
+                        .contact-mobile{
+                            display: none;
+                        }
                         .contact-person{
                             margin-top: 30px;
                         }
@@ -1118,14 +1122,28 @@
                                     font-size: 28px;
                                     padding: 8px 0;
                                 }
+                                #about{
+                                    padding-top: 40px;
+                                }
                                 #why-us .why-us-content {
                                     padding-top: 30px;
+                                    padding-bottom: 30px
                                 }
                                 #pricing {
                                     padding-bottom: 30px;
                                 }
                                 #pricing .card {
                                     margin-bottom: 50px;
+                                }
+                                .contact-mobile{
+                                    display: block;
+                                    margin-top: none;
+                                }
+                                .contact-pc{
+                                    display: none;
+                                }
+                                #footer .footer-top{
+                                    padding-top: 20px;
                                 }
                             }
                             @media all and (max-width: 768px) {
@@ -1169,7 +1187,7 @@
                                 .form-container .form-pendaftaran {
                                     margin: 0 auto;
                                     width: 100%;
-                                }   
+                                }
                             }
                             @media all and (max-width: 574px) {
                                 #footer .footer-top .social-links a {
