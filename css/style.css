@@ -786,7 +786,7 @@
                         #footer {
                             padding: 0 0 30px 0;
                             font-size: 14px;
-                            background: #fff;
+                            background: #2d2b46; /*rgb(164, 162, 236)*/
                         }
                         
                         #footer .footer-top {
@@ -1038,8 +1038,21 @@
                             background: #1bb1dc;
                             color: #fff;
                         }
+                        #footer .btn-get-started:hover {
+                            background: #0f6b85;
+                        }
+                        #footer label{
+                            font-size: 20px;
+                            margin-right: 10px
+                        }
                         .contact-person{
                             margin-top: 30px;
+                        }
+                        .contact-person i{
+                            margin-right: 5px;
+                        }
+                        .contact-person .btn-get-started{
+                            height: 100%;
                         }
                         /*form-pendaftaran*/
                         
