@@ -69,14 +69,14 @@
     <div class="container d-flex h-100">
       <div class="row justify-content-center align-self-center">
         <div class="col-md-6 intro-info order-md-first order-last">
-          <h2>Lomba<br><span>Fotografi</span></h2>
+          <h2 id="intro-fotografi-title">Lomba<br><span>Fotografi</span></h2>
           <div>
-            <a href="#services" class="btn-get-started scrollto">Daftar sekarang!</a>
+            <a href="#daftar" class="btn-get-started scrollto">Daftar sekarang!</a>
           </div>
         </div>
   
-        <div class="col-md-6 intro-img order-md-last order-first">
-          <img src="img/fotografi-intro.png" alt="" class="img-fluid">
+        <div class="col-md-6 intro-img order-md-last order-first text-left">
+          <img src="img/fotografi-intro.svg" alt="" class="img-fluid">
         </div>
       </div>
 
@@ -175,48 +175,71 @@
     </section><!-- #about -->
 
     <section>
-        <div class="container">
-            <div class="form-container wow fadeInUp form">
-                <h2>Daftar</h2>
-                <form action="https://formspree.io/f/xknpjegb" method="POST" enctype="multipart/form-data" class="form-pendaftaran">
+        <div class="container-fluid">
+            <div class="form-container wow fadeInUp form" id="daftar">
+                <h2>Daftar : Fotografi</h2>
+                <form action="https://formspree.io/f/xknpjegb" method="POST" enctype="multipart/form-data" class="form-pendaftaran contactForm" role="form">
                     <div class="form-group">
-                      <select class="form-control" name="lomba" id="lomba" data-rule="required" data-msg="Pilih salah satu lomba">
-                        <option disabled selected>-Lomba yang ingin diikuti-</option>
-                        <option value="Fotografi">Fotografi</option>
-                        <option value="Videoblog">Videoblog</option>
-                        <option value="Infografi">Infografi</option>
-                        <option value="PUBGM">PUBGM</option>
-                      </select>
+                      <input type="hidden" class="form-control" value="Fotografi" name="lomba" id="lomba">
                     </div>
                     <div class="form-group">
+                        <label for="name">Nama lengkap</label><br>
                         <input type="text" name="name" class="form-control" id="name" placeholder="Nama lengkap" data-rule="minlen:4" data-msg="Masukan nama lengkap" />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
-                        <input type="date" class="form-control" name="date" id="date" placeholder="Tanggal Lahir" value="" min="1997-01-01" max="2030-12-31" data-rule="date" data-msg="Masukan tanggal lahir yang benar" />
+                        <label for="date">Tanggal lahir</label><br>
+                        <input type="date" class="form-control" name="date" id="date" value="1945-08-17" data-rule="date" data-msg="Masukan tanggal lahir yang benar" />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email required" data-msg="Masukan email yang benar" />
+                        <label for="email">Email</label><br>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="supri@gemail.com" data-rule="email" data-msg="Masukan email yang benar" />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="sekolah" class="form-control" id="sekolah" placeholder="Asal Sekolah" data-rule="minlen:4" data-msg="Masukan nama sekolah yang benar" />
+                        <label for="sekolah">Asal sekolah</label><br>
+                        <input type="text" name="sekolah" class="form-control" id="sekolah" placeholder="SMP/MTs" data-rule="minlen:4" data-msg="Masukan nama sekolah yang benar" />
                         <div class="validation"></div>
                     </div>
                     <div class="form-group">
-                      <div class="form-control-file">
-                        <label>Masukan foto kartu pelajar <input type="hidden" role="uploadcare-uploader" name="my_file" accept="image/*" /></label>
-                        <div class="validation"></div>
+                        <label for="kartu-pelajar">Masukan foto kartu pelajar</label><br>
+                        <input type="hidden" role="uploadcare-uploader" name="kartu-pelajar" id="kartu-pelajar"/>
+                    </div>
+                  <div class="text-right"><button id="submit1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Submit</button></div>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                       <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Apakah data dalam form<br>sudah benar?</h5>
+                          <button button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div>Lomba : <br><b><div id="konfirm-lomba"></div></b></div><br>
+                          <div>Nama lengkap : <br><b><div id="konfirm-nama"></div></b></div><br>
+                          <div>Tanggal lahir : <br><b><div id="konfirm-tanggal"></div></b></div><br>
+                          <div>Email : <br><b><div id="konfirm-email"></div></b></div><br>
+                          <div>Sekolah : <br><b><div id="konfirm-sekolah"></div></b></div><br>
+                          <div>Foto Kartu Pelajar : <br><img src="" alt="" id="konfirm-file"/></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="submit" title="Submit">Submit</button>
+                        </div>
                       </div>
                     </div>
-                  <div class="text-center"><button type="submit" title="Submit">Submit</button></div>
-                  <input type="hidden" name="_next" value="//site.io/thanks.html" />
+                  </div>
+                  <input type="hidden" name="_next" value="thanks.html" />
                 </form>
             </div>
         </div>
     </section>
 
+    
   </main>
 
   <!--==========================

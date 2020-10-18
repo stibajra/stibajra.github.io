@@ -128,5 +128,38 @@
     }
   });
 
+  //Confirm Registration Form
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      
+      reader.onload = function(e) {
+        $('#kartu-pelajar').attr('src', e.target.result);
+      }
+      
+      reader.readAsDataURL(input.files[0]); // convert to base64 string
+    }
+  }
+  
+  $("#submit1").click(function(){
+    var lomba = document.getElementById("lomba").value;
+    var name = document.getElementById("name").value;
+    var date = document.getElementById("date").value;
+    var email = document.getElementById("email").value;
+    var sekolah = document.getElementById("sekolah").value;
+    var kartuPelajar = document.getElementById("kartu-pelajar").value;
+    var imgPreview = document.getElementById("konfirm-file");
+    
+    document.getElementById("konfirm-lomba").innerHTML = lomba;
+    document.getElementById("konfirm-nama").innerHTML = name;
+    document.getElementById("konfirm-tanggal").innerHTML = date;
+    document.getElementById("konfirm-email").innerHTML = email;
+    document.getElementById("konfirm-sekolah").innerHTML = sekolah;
+    imgPreview.src = kartuPelajar;
+    
+    
+    
+  })
+
 })(jQuery);
 

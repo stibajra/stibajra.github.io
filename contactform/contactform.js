@@ -1,8 +1,8 @@
 jQuery(document).ready(function($) {
   "use strict";
 
-  //Contact
-  $('form.contactForm').submit(function() {
+  //Form
+  //$('form.form-pendaftaran').submit(function() {
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
@@ -29,6 +29,19 @@ jQuery(document).ready(function($) {
             }
             break;
 
+          case 'date':
+            if (i.val() === '1945-08-17') {
+              ferror = ierror = true;
+            }
+            break;
+
+          case 'image':
+            if (i.val() === 'image') {
+              ferror = ierror = true;
+            }
+            break;
+            
+             
           case 'minlen':
             if (i.val().length < parseInt(exp)) {
               ferror = ierror = true;
@@ -90,20 +103,34 @@ jQuery(document).ready(function($) {
     });
     if (ferror) return false;
     else var str = $(this).serialize();
-    var action = $(this).attr('action');
+    var action = $(".form-pendaftaran").attr('action');
     if( ! action ) {
-      action = 'contactform/contactform.php';
+      action = 'https://formspree.io/f/xknpjegb';
     }
+    var lomba = $("#lomba").val();
+    var name = $("#name").val();
+    var date = $("#date").val();
+    var email = $("#email").val();
+    var sekolah = $("#sekolah").val();
+    var kartuPelajar = $("#kartu-pelajar").val()
+
     $.ajax({
-      type: "POST",
+      method: "POST",
       url: action,
-      data: str,
+      dataType: "json" ,
+      data: {
+          lomba: lomba,
+          name : name,
+          date : date,
+          email : email,
+          sekolah : sekolah,
+          kartuPelajar : kartuPelajar,
+      },
       success: function(msg) {
-        // alert(msg);
+        //alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
-          $("#errormessage").removeClass("show");
-          $('.contactForm').find("input, textarea").val("");
+          $("#errormessage").removeClass("show")  ;
         } else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
@@ -115,4 +142,5 @@ jQuery(document).ready(function($) {
     return false;
   });
 
+  
 });
