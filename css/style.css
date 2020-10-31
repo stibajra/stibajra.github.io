@@ -11,14 +11,14 @@
                         }
                         
                         a {
-                            color: #1bb1dc;
+                            color: #8726b8;
                             transition: 0.5s;
                         }
                         
                         a:hover,
                         a:active,
                         a:focus {
-                            color: #0a98c0;
+                            color: #671092;
                             outline: none;
                             text-decoration: none;
                         }
@@ -54,7 +54,7 @@
                         .back-to-top {
                             position: fixed;
                             display: none;
-                            background: #1bb1dc;
+                            background: #8726b8;
                             color: #fff;
                             width: 44px;
                             height: 44px;
@@ -91,7 +91,7 @@
                             top: calc(50% - 30px);
                             left: calc(50% - 30px);
                             border: 6px solid #f2f2f2;
-                            border-top: 6px solid #1bb1dc;
+                            border-top: 6px solid #8726b8;
                             border-radius: 50%;
                             width: 60px;
                             height: 60px;
@@ -133,21 +133,6 @@
                         #topbar .social-links {
                             text-align: right;
                         }
-                        
-                        #topbar .social-links a {
-                            color: #535074;
-                            padding: 4px 12px;
-                            display: inline-block;
-                            line-height: 1px;
-                        }
-                        
-                        #topbar .social-links a:hover {
-                            color: #1bb1dc;
-                        }
-                        
-                        #topbar .social-links a:first-child {
-                            border-left: 0;
-                        }
                         /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -168,7 +153,7 @@
                         
                         #header.header-scrolled,
                         #header.header-pages {
-                            height: 70px;
+                            height: 80px;
                             padding: 15px 0;
                             background-color: #fff;
                             box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
@@ -197,8 +182,8 @@
                         
                         #header .logo img {
                             padding: 0;
-                            margin: 7px 0;
-                            max-height: 26px;
+                            margin: 0;
+                            max-height: 50px;
                         }
                         
                         .main-pages {
@@ -212,7 +197,7 @@
                             width: 100%;
                             height: 100vh;
                             position: relative;
-                            background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat;
+                            background: #f5f8fd url("../img/intro-bg.png") center top no-repeat;
                             background-size: cover;
                         }
                         
@@ -231,7 +216,7 @@
                         }
                         
                         #intro .intro-info h2 span {
-                            color: #1bb1dc;
+                            color: #8726b8;
                         }
                         
                         #intro .intro-info .btn-get-started,
@@ -246,13 +231,13 @@
                             border-radius: 4px;
                             transition: 0.5s;
                             color: #fff;
-                            background: #1bb1dc;
+                            background: #8726b8;
                             color: #fff;
                         }
                         
                         #intro .intro-info .btn-get-started:hover,
                         #intro .intro-info .btn-services:hover {
-                            background: #0a98c0;
+                            background: #51166e;
                         }
 
                         /*--------------------------------------------------------------
@@ -293,7 +278,7 @@
                         .main-nav a:hover,
                         .main-nav .active>a,
                         .main-nav li:hover>a {
-                            color: #1bb1dc;
+                            color: #8726b8;
                             text-decoration: none;
                         }
                         
@@ -327,13 +312,13 @@
                             font-size: 14px;
                             font-weight: 500;
                             text-transform: none;
-                            color: #065e77;
+                            color: #413e66;
                         }
                         
                         .main-nav .drop-down ul a:hover,
                         .main-nav .drop-down ul .active>a,
                         .main-nav .drop-down ul li:hover>a {
-                            color: #1bb1dc;
+                            color: #8726b8;
                         }
                         
                         .main-nav .drop-down>a:after {
@@ -371,7 +356,7 @@
                             z-index: 9999;
                             overflow-y: auto;
                             left: -260px;
-                            width: 260px;
+                            width: 210px;
                             padding-top: 18px;
                             background: rgba(40, 38, 70, 0.8);
                             transition: 0.4s;
@@ -394,7 +379,7 @@
                         .mobile-nav a:hover,
                         .mobile-nav .active>a,
                         .mobile-nav li:hover>a {
-                            color: #8dc2fa;
+                            color: #8726b8;
                             text-decoration: none;
                         }
                         
@@ -430,7 +415,7 @@
                             z-index: 9998;
                             border: 0;
                             background: none;
-                            font-size: 24px;
+                            font-size: 34px;
                             transition: all 0.4s;
                             outline: none !important;
                             line-height: 1;
@@ -439,8 +424,8 @@
                         }
                         
                         .mobile-nav-toggle i {
-                            margin: 18px 18px 0 0;
-                            color: #065e77;
+                            margin: 24px 18px 0 0;
+                            color: #3e2b47;
                         }
                         
                         .mobile-nav-overly {
@@ -625,7 +610,7 @@
                         }
                         
                         #services .box:hover .title a {
-                            color: #1bb1dc;
+                            color: #8726b8;
                         }
                         
                         #services .description {
@@ -661,7 +646,7 @@
   
   #portfolio #portfolio-flters li:hover,
   #portfolio #portfolio-flters li.filter-active {
-    color: #1bb1dc;
+    color: #8726b8;
   }
   
   #portfolio #portfolio-flters li:last-child {
@@ -680,6 +665,9 @@
     margin: 0;
   }
   
+  #portfolio .portfolio-item img{
+      border-radius: 30px;
+  }
   #portfolio .portfolio-item .portfolio-wrap .portfolio-info {
     position: absolute;
     top: 0;
@@ -741,7 +729,7 @@
 --------------------------------*/
                         
                         #call-to-action {
-                            background: #2d2b46;
+                            background: #392b46;
                             background-size: cover;
                             padding: 40px 0;
                         }
@@ -775,8 +763,8 @@
                         }
                         
                         #call-to-action .cta-btn:hover {
-                            background: #1bb1dc;
-                            border: 3px solid #1bb1dc;
+                            background: #8726b8;
+                            border: 3px solid #8726b8;
                         }
                         /* Frequently Asked Questions Section
 --------------------------------*/
@@ -842,6 +830,12 @@
                             font-weight: 600;
                             font-size: 24px;
                         }
+
+                        /*petunjuk teknis lomba */
+                        .petunjuk-img{
+                            width: 500px;
+                            margin: 0 auto;
+                        }
                         /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -849,7 +843,7 @@
                         #footer {
                             padding: 0 0 30px 0;
                             font-size: 14px;
-                            background: #2d2b46; /*rgb(164, 162, 236)*/
+                            background: #3b2b46; /*rgb(164, 162, 236)*/
                         }
                         
                         #footer .footer-top {
@@ -884,20 +878,23 @@
                         #footer .footer-top .social-links a {
                             font-size: 18px;
                             display: inline-block;
-                            background: #1bb1dc;
+                            background: #8726b8;
                             color: #fff;
                             line-height: 1;
-                            padding: 8px 0;
+                            padding: 8px 10px;
                             margin-right: 4px;
-                            border-radius: 50%;
+                            border-radius: 10%;
                             text-align: center;
-                            width: 36px;
                             height: 36px;
                             transition: 0.3s;
                         }
+
+                        #footer .footer-top .social-links span{
+                            margin-left: 10px;
+                        }
                         
                         #footer .footer-top .social-links a:hover {
-                            background: #0a98c0;
+                            background: #992dcf;
                             color: #fff;
                         }
                         
@@ -933,7 +930,7 @@
                         }
                         
                         #footer .footer-top .footer-links ul a:hover {
-                            color: #1bb1dc;
+                            color: #8726b8;
                         }
                         
                         #footer .footer-top .footer-contact {
@@ -1037,7 +1034,7 @@
                         }
                         
                         .form .form-pendaftaran button[type="button"] {
-                            background: #1bb1dc;
+                            background: #9a20d6;
                             border: 0;
                             border-radius: 3px;
                             padding: 8px 30px;
@@ -1046,7 +1043,7 @@
                         }
                         
                         .form .form-pendaftaran button[type="button"]:hover {
-                            background: #0a98c0;
+                            background: #8726b8;
                             cursor: pointer;
                         }
                         .modal .modal-body #konfirm-file{
@@ -1098,11 +1095,11 @@
                             border-radius: 4px;
                             transition: 0.5s;
                             color: #fff;
-                            background: #1bb1dc;
+                            background: #8726b8;
                             color: #fff;
                         }
                         #footer .btn-get-started:hover {
-                            background: #0f6b85;
+                            background: #4f176b;
                         }
                         #footer label{
                             font-size: 20px;
@@ -1113,6 +1110,7 @@
                         }
                         .contact-person{
                             margin-top: 30px;
+                            text-align: center;
                         }
                         .contact-person i{
                             margin-right: 5px;
@@ -1136,7 +1134,7 @@
                         }
                         
                         .form button[type="submit"] {
-                            background: #1bb1dc;
+                            background: #8726b8;
                             border: 0;
                             border-radius: 3px;
                             padding: 8px 30px;
@@ -1145,7 +1143,7 @@
                         }
                         
                         .form button[type="submit"]:hover {
-                            background: #0a98c0;
+                            background: #6a0f97;
                             cursor: pointer;
                         }
                         .bold{
@@ -1202,13 +1200,6 @@
                                 }
                                 #pricing .card {
                                     margin-bottom: 50px;
-                                }
-                                .contact-mobile{
-                                    display: block;
-                                    margin-top: none;
-                                }
-                                .contact-pc{
-                                    display: none;
                                 }
                                 #footer .footer-top{
                                     padding-top: 20px;
