@@ -1037,7 +1037,7 @@
                         }
                         
                         .form .form-pendaftaran button[type="button"] {
-                            background: #9a20d6;
+                            background: #4a3e50;
                             border: 0;
                             border-radius: 3px;
                             padding: 8px 30px;
@@ -1046,14 +1046,14 @@
                         }
                         
                         .form .form-pendaftaran button[type="button"]:hover {
-                            background: #8726b8;
+                            background: #85549e;
                             cursor: pointer;
                         }
                         .modal .modal-body #konfirm-file{
                             width: 70%;
                         }  
                         .modal .modal-footer button[type="submit"] {
-                            background: #1bb1dc;
+                            background: #8726b8;
                             border: 0;
                             border-radius: 3px;
                             padding: 8px 30px;
@@ -1062,7 +1062,7 @@
                         }
                         
                         .modal .modal-footer button[type="submit"]:hover {
-                            background: #0a98c0;
+                            background: #9c1ddb;
                             cursor: pointer;
                         }
                         #footer .copyright {
