@@ -73,7 +73,7 @@
                             color: #fff;
                         }
                         /* Prelaoder */
-                        
+
                         #preloader {
                             position: fixed;
                             top: 0;
@@ -835,6 +835,9 @@
                         .petunjuk-img{
                             width: 500px;
                             margin: 0 auto;
+                        }
+                        .list-group-item{
+                            margin-right: 0;
                         }
                         /*--------------------------------------------------------------
 # Footer
